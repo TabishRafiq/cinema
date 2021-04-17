@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <button class="Main" id="pay" onclick="">Buy Ticket 0 PKR</button>
+    <button class="Main" id="pay" onclick="Qpay()">Buy Ticket 0 PKR</button>
 
 </body>
 
@@ -160,7 +160,7 @@
     .legend {
         display: inline;
         margin-right: 16px;
-        margin-left: 4px;
+        margin-left: 2px;
         font-family: 'Mulish', sans-serif;
         color: rgba(255, 255, 255, 0.45);
         font-size: 14px;
@@ -179,6 +179,10 @@
         font-weight: 600;
         margin-top: 40px;
         font-size: 16px;
+    }
+
+    .main:active:hover {
+        background-color: #a52922;      
     }
 
     .seatButton {
@@ -206,6 +210,7 @@
     var total = 0;
     function myFunction(id)
     {
+        
         if (rseats.includes(id))
        {
            return 0;      
@@ -224,10 +229,17 @@
        document.getElementById("pay").innerHTML = "Buy Ticket " + total + " PKR";
     }
 
+    function Qpay()
+    {
+        alert(total);
+    }
+
     function arrayRemove(arr, value) { 
     
     return arr.filter(function(ele){ 
         return ele != value; 
     });
+
+    
 }
 </script>
