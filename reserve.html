@@ -1,0 +1,206 @@
+<body>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+       user-scalable=0'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <h2>Godzilla vs. Kong</h2>
+    <p class="subheading">Today, 02:30 PM</p>
+
+    <img src="https://i.ibb.co/xHLmst2/Group-1972.png" alt="screen" width="82%" height="60px">
+    <div class="seats-grid-container">
+        <div class="grid-container">
+            <div></div>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+        </div>
+
+        <div class="grid-container">
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <div></div>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+
+            <button class="seatButton" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton " id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+            <button class="seatButton Res" id="clear" onclick="myFunction()"></button>
+        </div>
+    </div>
+
+    <div class="len">
+        <div>          
+        <span class="dot" style="background-color:rgba(255, 255, 255, 0.08);"></span>
+        <p class="legend">Available</p>
+        </div>
+        <div>          
+        <span class="dot" style="background-color: rgba(255, 255, 255, 0.8);"></span>
+        <p class="legend">Reserved</p>
+        </div>
+        <div>          
+        <span class="dot" style="background-color:#de3d35;"></span>
+        <p class="legend">Selected</p>
+        </div>
+    </div>
+
+    <button class="Main" id="clear" onclick="myFunction()">Buy Ticket 500 PKR</button>
+
+</body>
+
+<style>
+    /* add css code*/
+    body {
+
+        background-color: #1b1c27;
+        background-image: linear-gradient(180deg, #1b1c27, #13141d);
+        padding: 16px;
+        margin: 0px;
+    }
+
+    .len{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .dot {
+        height: 12px;
+        width: 12px;
+
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .seats-grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        height: auto;
+        column-gap: 16px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 100%;
+        justify-items: center;
+        row-gap: 0px;
+        height: auto;
+    }
+
+    img {
+        margin-top: 64px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        margin-bottom: 0px;
+        font-size: 26px;
+    }
+
+    .subheading {
+        margin-top: 6px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.45);
+        font-family: 'Mulish', sans-serif;
+    }
+
+    .legend {
+        display: inline;
+        margin-right: 16px;
+        margin-left: 4px;
+        font-family: 'Mulish', sans-serif;
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 14px;
+    }
+
+
+    .main {
+        outline: 0;
+        border: 0;
+        background-color: #de3d35;
+        color: white;
+        width: 100%;
+        height: 56px;
+        border-radius: 14px;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 600;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .seatButton {
+        margin-top: 16px;
+        outline: 0;
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.08);
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+    }
+
+    .res {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+
+    .seatButton:focus {
+        background-color: #de3d35;
+    }
+
+    .res:focus {
+        background-color: rgba(255, 255, 255, 1);
+    }
+</style>

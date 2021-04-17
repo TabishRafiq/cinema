@@ -1,0 +1,130 @@
+<body>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+       user-scalable=0'>
+
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+       <div class="top">
+        <div>
+            <p class="heading">Hey Sidra</p>
+            <p class="subheading">Today, 18 February</p>
+        </div>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/YZSR0g7/man.png" height="44px" width="44px" style="border-radius: 50%;"></a>
+       </div>
+       
+
+   
+    <div class="Movies">
+        <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg" class="movie"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/Godzilla_vs._Kong.jpg" class="movie"  onclick="myFunction()"></img>
+        <img src="https://images.moviepostershop.com/dora-and-the-lost-city-of-gold-movie-poster-1000779403.jpg" class="movie"></img>
+        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/2018-bestposters-spidermanspiderverse-700x1038.jpg" class="movie"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_a05960dd.jpg" class="movie"></img>
+    </div>
+
+    <h2>Upcoming Movies</h2>
+
+    <div class="Movies-s">
+        <img src="https://images.moviepostershop.com/dora-and-the-lost-city-of-gold-movie-poster-1000779403.jpg" class="movie-s" ></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_a05960dd.jpg" class="movie-s"></img>
+        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/2018-bestposters-spidermanspiderverse-700x1038.jpg" class="movie-s"></img>
+        <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg" class="movie-s"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0969/9128/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_8ebc60d6-7299-4918-80db-989d0f188018.jpg" class="movie-s"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/Godzilla_vs._Kong.jpg" class="movie-s"></img>      
+
+    </div>
+
+
+
+</body>
+
+<style>
+    /* add css code*/
+    body {
+
+        background-color: #1b1c27;
+        background-image: linear-gradient(180deg, #10101a, #0e0f18);
+        padding: 16px;
+        margin: 0px;
+    }
+
+    .top {
+    flex-direction:row;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    }
+
+    ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+}
+
+
+    h2 {
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .heading {
+        color: rgba(255, 255, 255, 0.90);
+        font-family: 'Mulish', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .subheading {
+        color:rgba(255, 255, 255, 0.45);
+        font-family: 'Mulish', sans-serif;
+        font-size: 14px;
+        margin-bottom: 0px;
+        margin-top: 4px;
+    }
+
+    .Movies{
+        width: 100%;
+        height: 430px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 24px;
+        scroll-snap-type: x mandatory;
+    } 
+    
+    .movie{
+     
+        width: 280px;
+        height: 420px;
+        background-color: black; 
+        margin-right: 16px;
+        display: inline-block;
+        border-radius: 16px;
+        scroll-snap-align: center;
+    } 
+
+    .Movies-s{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        column-gap: 16px;
+        row-gap: 16px;
+    } 
+    
+    .movie-s{
+        width: 100%;
+        height: 250px;
+        display: inline-block;
+        border-radius: 12px;
+    } 
+</style>
+
+<script>
+    function myFunction() {
+      location.assign("movie.html")
+    }
+</script>

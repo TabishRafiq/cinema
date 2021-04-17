@@ -1,0 +1,101 @@
+<body>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+       user-scalable=0'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <div class="content">
+        <h2>Godzilla vs. Kong</h2>
+        <div class="imbd">IMBD 7.8</div>
+        <p class="subheading">Showtime: <b>2:00 PM</b>   ·   Cinema: <b>B</b></p>
+        <p class="mytext">Godzilla vs. Kong is a 2021 American monster film directed by Adam Wingard. A sequel to Godzilla: King of the Monsters (2019) and Kong: Skull Island (2017), it is the fourth film in Legendary's Monster.</p>
+        <button class="Main" id="clear" onclick="myFunction()">Reserve</button>
+    </div>
+</body>
+
+<style>
+
+body{
+
+    background-image: url('https://i.ibb.co/ky6QrV0/godzila.jpg');
+    background-size:cover;
+    background-position-y: -120px;
+    margin: 0px;
+}
+
+.content{
+
+position: fixed;
+width: auto;
+bottom: 0px;
+background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%, #13141d 50%);
+padding-left: 16px;
+padding-right: 16px;
+padding-bottom: 16px;
+}
+
+.main {
+        outline: 0;
+        border: 0;
+        background-color: #de3d35;
+        color: white;
+        width: 100%;
+        height: 56px;
+        border-radius: 14px;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        
+    }
+
+    .main:active:hover {
+        background-color: #a52922;      
+    }
+
+    
+    h2 {
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        margin-top: 240px;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .subheading {
+        margin-top: 16px;
+        color: rgba(255, 255, 255, 0.85);
+        font-family: 'Mulish', sans-serif;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .mytext {
+        color: rgba(255, 255, 255, 0.45);
+        font-family: 'Mulish', sans-serif;
+        line-height: 160%;
+        font-size: 14.3px;
+    }
+
+    .imbd {
+        font-size: 12px;
+        width: 68px;
+        padding: 4px;
+        text-align: center;
+        font-family: 'Mulish', sans-serif;
+        background-color: goldenrod;
+        border-radius: 20px;
+        font-weight: 800;
+    }
+
+
+</style>
+
+<script>
+    function myFunction() {
+      location.assign("reserve.html")
+    }
+</script>
