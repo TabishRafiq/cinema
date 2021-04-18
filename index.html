@@ -10,28 +10,29 @@
             <p class="heading">Hey Sidra</p>
             <p class="subheading">Today, 18 February</p>
         </div>
-        <img src="https://i.ibb.co/YZSR0g7/man.png" height="44px" width="44px" style="border-radius: 50%;"></a>
+        <img src="https://i.ibb.co/8sDdxys/man.png" height="44px" width="44px" style="border-radius: 50%;"></a>
        </div>
     
    
     <div class="Movies">
-        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/2018/March/50-Typographic-Oscars-Film-Posters/38_350.jpg" loading="lazy" class="movie"></img>
-        <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg" loading="lazy" class="movie"></img>
-        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/Godzilla_vs._Kong.jpg" class="movie"  loading="lazy" onclick="myFunction()"></img>
-        <img src="https://images.moviepostershop.com/dora-and-the-lost-city-of-gold-movie-poster-1000779403.jpg" loading="lazy" class="movie"></img>
-        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/2018-bestposters-spidermanspiderverse-700x1038.jpg" loading="lazy" class="movie"></img>
-        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_a05960dd.jpg" class="movie"></img>
+    
+        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/2018/March/50-Typographic-Oscars-Film-Posters/38_350.jpg" id="a1" onload="loade(this.id)" class="movie"></img>
+        <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg" id="a2" onload="loade(this.id)" class="movie"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/Godzilla_vs._Kong.jpg" class="movie" id="a3" onload="loade(this.id)" onclick="myFunction()"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/e9d0df80d465962cac9d802f050f10dd_3fcf490b-744f-4a4c-9727-02da5bf6be64.jpg" id="a4" onload="loade(this.id)"  class="movie"></img>
+        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/2018-bestposters-spidermanspiderverse-700x1038.jpg" id="a5" onload="loade(this.id)" class="movie"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_a05960dd.jpg" style="margin-right: 16px;" id="a6" onload="loade(this.id)" class="movie"></img>
     </div>
 
     <h2>Upcoming Movies</h2>
 
     <div class="Movies-s">
-        <img src="https://images.moviepostershop.com/dora-and-the-lost-city-of-gold-movie-poster-1000779403.jpg" class="movie-s" ></img>
-        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_a05960dd.jpg" class="movie-s"></img>
-        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/2018-bestposters-spidermanspiderverse-700x1038.jpg" class="movie-s"></img>
-        <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg" class="movie-s"></img>
-        <img src="https://cdn.shopify.com/s/files/1/0969/9128/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_8ebc60d6-7299-4918-80db-989d0f188018.jpg" class="movie-s"></img>
-        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/Godzilla_vs._Kong.jpg" class="movie-s"></img>      
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/e9d0df80d465962cac9d802f050f10dd_3fcf490b-744f-4a4c-9727-02da5bf6be64.jpg" id="b1" onload="loade(this.id)" class="movie-s" ></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/avatar_a05960dd.jpg" id="b2" onload="loade(this.id)" class="movie-s"></img>
+        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/2018-bestposters-spidermanspiderverse-700x1038.jpg" id="b3" onload="loade(this.id)" class="movie-s"></img>
+        <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg" id="b4" onload="loade(this.id)" class="movie-s"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0969/9128/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_8ebc60d6-7299-4918-80db-989d0f188018.jpg" id="b5" onload="loade(this.id)" class="movie-s"></img>
+        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/Godzilla_vs._Kong.jpg" id="b6" onload="loade(this.id)" class="movie-s"></img>      
 
     </div>
 
@@ -106,6 +107,8 @@
         display: inline-block;
         border-radius: 16px;
         scroll-snap-align: center;
+        opacity: 0;
+        transition: 1s;
     } 
 
     .Movies-s{
@@ -117,7 +120,6 @@
         row-gap: 16px;
         padding-left: 16px;
         padding-right: 16px;
-        
     } 
     
     .movie-s{
@@ -125,11 +127,24 @@
         height: 250px;
         display: inline-block;
         border-radius: 12px;
+        opacity: 0;
+        transition: 1s;
     } 
+
+    .mystyle{
+        opacity: 1;
+    }
 </style>
 
 <script>
     function myFunction() {
       location.assign("movie.html")
     }
+
+    function loade(id)
+    {
+        var element = document.getElementById(id);
+        element.classList.add("mystyle");
+    }
+
 </script>
