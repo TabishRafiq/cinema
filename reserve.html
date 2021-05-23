@@ -208,7 +208,6 @@
     var seats= [];
     var rseats = ["A2","A4","A10","A12","A13","A20","A22","B6","B7","B8","B14","B17","B19","B22","B23"]
     var total = 0;
-    Android.setStatusBarColor(0xFF0000FF);
     function myFunction(id)
     {
         
@@ -234,6 +233,7 @@
     {
         
         Android.Qpay(total);
+        Android.setStatusBarColor(0xFF0000FF);
     }
     
     function paid()
